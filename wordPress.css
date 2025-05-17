@@ -1,0 +1,128 @@
+ html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(36, 31, 26);
+            padding: 20px;
+            font-size: 1rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: skyblue;
+        }
+
+        .project-list {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .nav {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ic {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .project-item {
+            background-color: rgb(57, 49, 41);
+            border: 1px solid skyblue;
+            box-shadow: 0px 0px 10px 2px skyblue;
+            padding: 15px;
+            color: skyblue;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .project-item:hover {
+            background-color: skyblue;
+            color: rgb(57, 49, 41);
+            box-shadow: 0px 0px 0px 0px;
+        }
+
+        .project-details {
+            display: none;
+            padding: 10px 20px;
+            background-color: skyblue;
+            color: rgb(57, 49, 41);
+            border-left: 3px solid #ff9800;
+            border-radius: 10px;
+
+
+        }
+        .project{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-weight: bold;
+            
+        }   
+        .images{
+        width:100%;
+        height: auto;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        
+    }
+    .imge{
+        width: 80%;
+        border-bottom: 4px solid #ff9800;
+    }
+
+        .fo {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 50px;
+            user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            -webkit-user-drag: none;
+            cursor: default;
+
+        }
+
+        .fot {
+            color: skyblue;
+        }
+
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 0.7rem;
+            }
+
+            .fot {
+                font-size: 0.6rem;
+            }
+        }

@@ -1,0 +1,966 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(36, 31, 26);
+    box-sizing: border-box;
+
+
+
+}
+
+.fix {
+    width: 100%;
+    height: 80px;
+
+}
+
+.multiple-text {
+    color: skyblue;
+}
+
+.rot {
+    color: skyblue;
+}
+
+.header {
+
+    width: 100%;
+    padding: 20px;
+    background: rgb(36, 31, 26);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: skyblue;
+    text-decoration: none;
+
+}
+
+.navbar {
+    margin-right: 80px;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: skyblue;
+}
+
+#menu-icon {
+    font-size: 2.5rem;
+    color: skyblue;
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+    margin-right: 40px;
+}
+
+.option {
+    width: 180px;
+    height: auto;
+    position: relative;
+    left: 400px;
+    top: 20px;
+    gap: 80px;
+    text-align: right;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.home {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-top: 50px;
+    transition: margin 0.3s ease;
+    
+}
+
+.homi {
+    width: 90%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ho {
+    width: 50%;
+    height: 350px;
+    padding-bottom: 100px;
+}
+
+#homhell {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 100px;
+}
+
+#homnam {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2.8rem;
+    color: white;
+    margin-top: 10px;
+    color: skyblue;
+
+}
+
+#homiam {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 10px;
+}
+
+#des {
+    color: white;
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+}
+
+.links {
+    width: 400px;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.icone-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.icone-box:hover {
+    background-color: skyblue;
+    box-shadow: 0px 0px 20px skyblue;
+}
+
+.icon {
+    width: 41px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: skyblue;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.linkda {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: skyblue;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.icone-box:hover .icon {
+    color: rgb(36, 31, 26);
+}
+
+.icone-box:hover .linkda {
+    color: rgb(36, 31, 26);
+}
+
+.cv {
+    width: 180px;
+    height: 50px;
+    background-color: skyblue;
+    margin-top: 30px;
+    color: rgb(36, 31, 26);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 25px skyblue;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+
+}
+
+.cv:hover {
+    background-color: rgb(36, 31, 26);
+    color: white;
+}
+
+.cv a {
+    color: rgb(36, 31, 26);
+    text-decoration: none;
+}
+
+.cv:hover a {
+    color: white;
+}
+
+.left {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.ima {
+    width: 50%;
+    height: 450px;
+    display: flex;
+}
+
+.image {
+    width: 400px;
+    height: 400px;
+    border: 2px solid skyblue;
+    box-shadow: 0px 0px 20px 5px skyblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    cursor: default;
+    animation: float 2s ease-in-out infinite;
+
+}
+
+.imageL {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.about {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 49, 41);
+}
+
+.about-main {
+    width: 90%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(57, 49, 41);
+
+}
+
+.imageA {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.imageAd {
+    width: 400px;
+    height: 400px;
+    border: 2px solid skyblue;
+    box-shadow: 0px 0px 20px 5px skyblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about-content {
+    width: 50%;
+    height: 450px;
+
+}
+
+.about-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-paragraph {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about strong {
+    color: skyblue;
+}
+
+
+.skills {
+    width: 100%;
+    height: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 31, 26);
+}
+
+.skills-main {
+    width: 100%;
+    height: auto;
+
+
+}
+
+.skills-h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: skyblue;
+}
+
+.skills-text {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-icone {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3.333%;
+
+}
+
+.icones {
+    width: 30%;
+    height: 200px;
+    border: 2px solid skyblue;
+    box-shadow: 0px 0px 15px 2px skyblue;
+    border-radius: 20px;
+    background-color: rgb(57, 49, 41);
+}
+
+.skicd {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skicdm {
+    width: 140px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    cursor: default;
+
+}
+
+.skic {
+    width: 120px;
+    height: 100px;
+    object-fit: contain;
+
+}
+
+.skted {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skte {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: skyblue;
+
+}
+
+.education {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    padding-top: 80px;
+    justify-content: center;
+    background-color: rgb(57, 49, 41);
+
+}
+
+.edumain {
+    width: 90%;
+    height: auto;
+
+}
+
+.edute {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.edusp {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: skyblue;
+}
+
+.edud {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edu1 {
+    width: 50%;
+    height: 600px;
+
+}
+
+.edu2 {
+    width: 50%;
+    height: 600px;
+}
+
+.sch {
+    width: 90%;
+    height: 250px;
+    background-color: rgb(36, 31, 26);
+    box-sizing: border-box;
+    padding-left: 20px;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+
+}
+
+.schm {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.schn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: skyblue;
+    margin-top: 15px;
+}
+
+.schper {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin-top: 15px;
+}
+
+.contact {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(36, 31, 26);
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.conte {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.contex {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: skyblue;
+    box-sizing: border-box;
+
+}
+
+.comm {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.conmain {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.urn {
+    width: 80%;
+    height: 70px;
+    margin-top: 50px;
+    outline: none;
+    border: 3px solid skyblue;
+    background-color: transparent;
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding-left: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+}
+
+.con1 {
+    width: 50%;
+    height: 300px;
+
+    text-align: center;
+
+}
+
+.con2 {
+    width: 50%;
+    height: 300px;
+
+    text-align: center;
+
+
+}
+
+.lste {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ls {
+    width: 60%;
+    height: 200px;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    border: 3px solid skyblue;
+    border-radius: 40px;
+    outline: none;
+
+}
+
+.fo {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(57, 49, 41);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    cursor: default;
+}
+
+.fot {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: skyblue;
+
+}
+
+
+
+
+
+@media (max-width:1000px) {
+    #menu-icon {
+        display: block;
+        color: skyblue;
+
+    }
+
+    .option {
+        width: 180px;
+        height: auto;
+        position: relative;
+        left: -80px;
+        top: -10px;
+        gap: 0px;
+        text-align: right;
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 10%;
+        right: 10%;
+        flex-direction: column;
+        width: 100px;
+        text-align: right;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgb(36, 31, 26);
+    }
+
+    .navbar.active {
+        display: flex;
+
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .home {
+        width: 100%;
+        height: 900px;
+        padding-top: 50px;
+    }
+
+    .homi {
+        height: auto;
+        display: block;
+        padding-bottom: 100PX;
+    }
+
+    .ho {
+        width: 100%;
+    }
+
+    .ima {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding-right: 100px;
+    }
+
+    .about {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-main {
+        display: block;
+        height: auto;
+
+    }
+
+    .ma {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        padding-left: 100px;
+        margin-top: 10px;
+        display: none;
+
+    }
+
+    .about-content {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+
+    }
+
+    .about-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills {
+        width: 100%;
+        height: 800px;
+
+    }
+
+    .skills-icone {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 3.33%;
+
+    }
+
+    .icones {
+        margin-top: 20px;
+        width: 45%;
+    }
+
+    .edud {
+        width: 100%;
+        display: block;
+
+    }
+
+    .education {
+        width: 100%;
+        height: auto;
+    }
+
+    .edu1 {
+        width: 100%;
+        height: 430px;
+    }
+
+    .edu2 {
+        width: 100%;
+        height: 450px;
+        margin-top: -0px;
+        margin-top: -120px;
+
+    }
+
+    .sch {
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .schm {
+        font-size: 1.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .schn {
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .schper {
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .urn {
+        font-size: 0.8rem;
+        height: 50px;
+    }
+
+}
+
+
+@media(max-width:500px) {
+    .header {
+
+        height: 20px;
+    }
+
+    .navbar {
+        position: absolute;
+        left: 200px;
+    }
+
+    .image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .imageL {
+        width: 300px;
+        height: 300px;
+    }
+
+    .skills {
+        height: auto;
+
+    }
+
+    .skills-icone {
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 50px;
+    }
+
+    .icones {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .education {
+        width: 100%;
+        height: auto;
+    }
+
+    .edu1 {
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+
+    }
+
+    .edu2 {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        padding-bottom: 40px;
+        margin-top: 12px;
+
+    }
+
+    .sch {
+        height: auto;
+
+    }
+
+    .schm {
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .schn {
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .schper {
+        font-size: .8rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .conte {
+        box-sizing: border-box;
+        padding-bottom: 150px;
+    }
+
+    .contact {
+        width: 100%;
+        height: auto;
+    }
+
+    .conmain {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+
+
+    .con1,
+    .con2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .urn {
+        width: 80%;
+        margin-bottom: 50px;
+        font-size: 1rem;
+        height: 50px;
+    }
+
+    .lste {
+        width: 100%;
+        padding-top: 120px;
+    }
+
+    .ls {
+        width: 80%;
+        height: 120px;
+        font-size: 1rem;
+
+    }
+
+    .fo {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .fot {
+        font-size: .5rem;
+
+    }
+}
